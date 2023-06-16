@@ -1,0 +1,57 @@
+despues de crear mi repo en GitHub y tener el enlace
+
+INIT
+git init (en folder local)
+
+REMOTE ADD
+git remote add origin <enlace de mi repo>
+
+PUSH
+git status
+git add .
+git status
+git commit -m "comentario"
+
+git push -u origin master
+
+CLONAR
+git clone <enlace del repo>
+
+PULL
+git pull origin <enlace del repo>
+
+CREAR RAMA
+git branch <nombre de nueva rama>
+
+RENOMBRAR RAMA
+git branch -m <nombre anterior> <nombre nuevo>
+
+CAMBIARME DE RAMA
+git checkout <nombre de rama a la que me cambiaré>
+
+ELIMINAR RAMA
+git branch -d <nombre de rama que quiero eliminar>
+
+CREAR ARCHIVO EN CONSOLA
+touch <nombreDelArchivo.txt>
+
+HACER EXCLUSIVOS CAMBIOS PARA UNA SOLA RAMA
+git status
+git add .
+git status
+git commit -m "con esto ya seran cambios unicamente visibles en la rama actual"
+
+SUBIR CAMBIOS DE UNA RAMA QUE LA OTRA NO TENDRÁ
+git add .
+git commit -m "Cambios exclusivos de la la nueva rama que cree (o en la que esté)"
+y al volver a la otra rama que no tiene esos cambios no tendra los archivos o movimientos hechos en la otra rama
+
+
+VER DIFERENCIA ENTRE RAMAS
+git diff <nombre de la otra rama que quiero comparar> <nombre de la rama que se comparará>
+
+MERGE
+git merge <rama origen con cambios> <rama destino desactualizada> (para hacer merge correctamente debo estar parado en la rama que va a recibir los cambios, en la desactualizada)
+
+*
+Creo que para subir a mi repositorio local solo puedo hacerlo estando en mi rama principal (master)
